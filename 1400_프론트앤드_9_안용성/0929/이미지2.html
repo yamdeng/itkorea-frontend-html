@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이미지 태그1</title>
+    <style>
+        customtag {
+            display: inherit;
+            display: block;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        
+        1.이미지는 inline 태그이다
+        2.이미지는 width와 height를 지정을 하지 않으면 사진 그대로의 width, height가 적용된다
+        3.customtag를 적용해서 style을 지정할 수 있다
+        4.block과 인라인 태그의 정체는 style 중 display 속성으로 좌지우지 되는 것이고 기본값은 inline으로 아무것도 지정하지 않으면 그렇게 된다
+        5.css의 주석은 /* */이고 단축키는 Ctrl + / 키이다
+    
+    -->
+    <img src="강아지1.jpg" width="300px" height="300px" />
+    <img src="강아지1.jpg" style="width: 300px; height: 300px;" />
+    <p>test</p>
+    <span style="display: block"><customtag>aaaa</customtag></span>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>TEXT_변환 예제2</title>
+    <style>
+        span.tag {
+            color: red;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            background-color: white;
+        }
+
+        span.mark {
+            color: black;
+            background-color: yellow;
+        }
+
+        span.small {
+            font-size: smaller;
+        }
+
+        span.big {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>그냥 글자</p>
+    <p style="font-weight: bold"><span class="tag">b 태그 : </span>글자를 bold 해보자</p>
+    <p style="font-weight: bold"><span class="tag">strong 태그 : </span>글자를 강하게 해보자</p>
+    <p style="font-style: italic"><span class="tag">em 태그 : </span>글자를 강조해보자</p>
+    <p style="font-style: italic"><span class="tag">i 태그 : </span>글자를 기울여 보자</p>
+    <p><span class="tag">mark 태그 : </span><span class="mark">글자를 mark 해보자</span></p>
+    <p><span class="tag">small 태그 : </span><span class="small">글자의 크기를 줄여보자</span></p>
+    <p><span class="tag">big 태그 : </span><span class="big">글자의 크기를 키워보자</span></p>
+    <p><span class="tag">del 태그 : </span><span style="text-decoration: line-through">글자 가운데에 선을 그어보자</span></p>
+    <p><span class="tag">ins 태그 : </span><span style="text-decoration: underline">글자 아래의 선을 그어보자</span></p>
+    <p>테스트<span style="vertical-align: sub; font-size: smaller">글자를 살짝 올려보자</span>테스트</p>
+    <p>테스트<span style="vertical-align: super; font-size: smaller">글자를 살짝 내려보자</span>테스트</p>
+
+</body>
+</html>
