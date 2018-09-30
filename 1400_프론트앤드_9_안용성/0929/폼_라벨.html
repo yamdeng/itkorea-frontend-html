@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>FORM input</title>
+</head>
+
+<body>
+
+    <h1>폼 라벨</h1>
+    <form action="https://korail-renewal-test.herokuapp.com/api/application/formtest" method="GET">
+        <label for="basic">basic</label> : <input id="basic" name="basic" /> <br/>
+        <label for="text">text</label> : <input type="text" name="text" id="text"/> <br/> 
+
+        <label for="text">radio1</label> : <input type="radio" name="radio" id="radio1" value="radio1"/> <br/> 
+       radio2 : <input type="radio" name="radio" id="radio2" value="radio2" checked/> <br/> 
+       radio3 : <input type="radio" name="radio" id="radio3" value="radio3"/> <br/> 
+
+       checkbox1 : <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1" checked/>체크1 <br/> 
+       checkbox2 : <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2"/>체크2 <br/> 
+       checkbox3 : <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3"/>체크3 <br/> 
+
+       number : <input type="number" name="number" id="number"/> <br/> 
+       range : <input type="range" name="range" id="range"/> <br/> 
+       password : <input type="password" name="password" id="password"/> <br/> 
+       file : <input type="file" name="file" id="file" multiple/> <br/>
+
+       email : <input type="email" name="email" id="email"/> <br/>
+       date : <input type="date" name="date" id="date"/> <br/>
+       tel : <input type="tel" name="tel" id="tel"/> <br/>
+
+       select : <select name="select" id="select" multiple>
+            <option value="daum">daum</option>
+            <option value="naver">naver</option>
+            <option value="google">google</option>
+        </select>
+        <br/>
+
+        textarea1 : <textarea rows="10" cols="30"></textarea><br/>
+        textarea2 : <textarea rows="10" cols="30" style="width: 200px; height: 100px;"></textarea>
+
+        <input type="reset" value="초기화"/>
+       <button type="submit">제출</button>
+    </form>
+
+</body>
+
+</html>
