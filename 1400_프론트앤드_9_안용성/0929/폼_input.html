@@ -1,49 +1,65 @@
 <html>
 
 <head>
-    <title>FORM input</title>
+    <title>FORM 전송</title>
 </head>
 
 <body>
 
-    <h1>폼 input을 나열해보자</h1>
+    <!-- 
+        
+        text, radio, checkbox, number, range, password, file, email, date, tel, 
+        select(size, multiple), textarea(rows, cols) 
 
-    <!-- text, radio, checkbox, number, range, password, file, email, date, tel, select(size, multiple), textarea(rows, cols) -->
+    -->
+
     <!-- hidden, color, time, image -->
+
+    <h1>폼 input을 배워보자</h1>
+
     <form action="https://korail-renewal-test.herokuapp.com/api/application/formtest" method="GET">
-       기본 : <input id="basic" name="basic" /> <br/>
-       text : <input type="text" name="text" id="text"/> <br/> 
-
-       radio1 : <input type="radio" name="radio" id="radio1" value="radio1"/> <br/> 
-       radio2 : <input type="radio" name="radio" id="radio2" value="radio2" checked/> <br/> 
-       radio3 : <input type="radio" name="radio" id="radio3" value="radio3"/> <br/> 
-
-       checkbox1 : <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1" checked/>체크1 <br/> 
-       checkbox2 : <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2"/>체크2 <br/> 
-       checkbox3 : <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3"/>체크3 <br/> 
-
-       number : <input type="number" name="number" id="number"/> <br/> 
-       range : <input type="range" name="range" id="range"/> <br/> 
-       password : <input type="password" name="password" id="password"/> <br/> 
-       file : <input type="file" name="file" id="file" multiple/> <br/>
-
-       email : <input type="email" name="email" id="email"/> <br/>
-       date : <input type="date" name="date" id="date"/> <br/>
-       tel : <input type="tel" name="tel" id="tel"/> <br/>
-
-       select : <select name="select" id="select" multiple>
-            <option value="daum">daum</option>
-            <option value="naver">naver</option>
-            <option value="google">google</option>
+        기본 : <input id="basic" name="basic" value="aaaa" /> <br />
+        text : <input type="text" id="text" name="text" /> <br />
+        라디오 : <input type="radio" id="radio1_1" name="radio1" value="1" />
+        <input type="radio" id="radio1_2" name="radio1" value="2" />
+        <input type="radio" id="radio1_3" name="radio1" value="3" />
+        <br />
+        체크박스 : <input type="checkbox" id="check_1" name="check_1" value="c1" />
+        <input type="checkbox" id="check_2" name="check_2" value="c2" />
+        <br />
+        number : <input type="number" id="number" name="number" /> <br />
+        range : <input type="range" id="range" name="range" /> <br />
+        password : <input type="password" id="password" name="password" /> <br />
+        file : <input type="file" id="file" name="file" /> <br />
+        email : <input type="email" id="email" name="email" /> <br />
+        date : <input type="date" id="date" name="date" /> <br />
+        tel : <input type="tel" id="tel" name="tel" /> <br />
+        select : <select>
+            <option value="www.naver.com">네이버</option>
+            <option value="www.daum.net">다음</option>
+            <option value="www.google.com">구글</option>
         </select>
-        <br/>
-
-        textarea1 : <textarea rows="10" cols="30"></textarea><br/>
-        textarea2 : <textarea rows="10" cols="30" style="width: 200px; height: 100px;"></textarea>
-
-        <input type="reset" value="초기화"/>
-       <button type="submit">제출</button>
+        <br />
+        textarea : <textarea id="textarea" name="textarea">
+        </textarea>
+        <br />
+        <button type="submit">전송 GOGO</button>
     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 

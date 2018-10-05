@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: blue;
+        }
+
+        span {
+            background-color: red;
+            color: black !important;
+        }
+
+        p {
+            background-color: yellow;
+        }
+
+        h1 {
+            background-color: orange
+        }
+
+        .div_class {
+            background-color: red;
+        }
+
+        .h1_class {
+            color: blue;
+        }
+
+        #span_id {
+            background-color: white
+        }
+
+        .span_class2 {
+            color: white;
+            background-color: black;
+        }
+
+        .span_class {
+            color: yellow;
+            background-color: black;
+        }
+
+        /*
+
+            tag : 1점
+            class : 10점
+            id : 100점
+            !important : 1000점
+
+        */
+    </style>
+</head>
+
+<body>
+    <div>
+        div 태그
+    </div>
+    <p>
+        p 태그
+    </p>
+    <div>
+        <span>span 태그</span>
+    </div>
+    <h1>H1 태그</h1>
+
+    <!-- 이하는 클래스 -->
+    <div class="div_class">
+        div_class 클래스 적용
+    </div>
+    <br />
+    <div>
+        <span class="span_class">span 태그</span>
+    </div>
+
+    <h1 class="h1_class">H1 태그<span id="span_id" class="span_class2 span_class">H1안의 span</span></h1>
+
+    <!-- 
+        
+        1.tag 개념        
+        2.class 개념
+        3.id
+    
+    -->
+
+</body>
+
+</html>

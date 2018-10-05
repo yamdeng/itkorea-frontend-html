@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        /* link, visited, hover, active */
+
+        /* 기본 : 한번도 클릭이 않되어있을때 */
+        a:link {
+            color: blue;
+        }
+
+        /* 한번이라 클릭이 되어있을때 */
+        a:visited {
+            color: red;
+        }
+
+        /* 태그에 마우스를 올렸을때 되어있을때 */
+        a:hover {
+            color: orange;
+        }
+
+        /* 마우스를 클릭한 상태 */
+        a:active {
+            color: green;
+        }
+
+        /* 가상클래스, 의사클래스 */
+    </style>
 </head>
+
 <body>
 
-    <a href="https://www.daum.net"> 
-        basic
-    </a>
-    <br/>
-    <a href="https://www.daum.net" target="_self"> 
-        self
-    </a>
-    <br/>
-    <a href="https://www.daum.net" target="_blank"> 
-        _blank
-    </a>
-    <br/>
+    <a href="https://www.w3schools.com/angular/default.asp" target="_blank">네이버 GOGO</a>
 
-    <a href="https://www.daum.net" target="_parent"> 
-        _parent
-    </a>
-    <br/>
-
-    <a href="https://www.daum.net" target="_top"> 
-        _top
-    </a>
-    <br/>
-    
 </body>
+
 </html>

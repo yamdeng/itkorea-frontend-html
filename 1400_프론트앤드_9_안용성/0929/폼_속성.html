@@ -1,52 +1,81 @@
 <html>
 
 <head>
-    <title>FORM 속성</title>
+    <title>FORM 전송</title>
 </head>
 
 <body>
 
-    <h1>폼 속성</h1>
+    <h1>폼 속성을 배워보자</h1>
 
     <!-- placeholder, required, readonly, disabled, size, maxlength, novalidate, autocomplete, autofocus, max, min, multiple, step, pattern -->
 
-    <form action="https://korail-renewal-test.herokuapp.com/api/application/formtest" method="GET" autocomplete>
-       기본 : <input id="basic" name="basic" placeholder="text 값을 입력하세요" required disabled/> <br/>
-       text : <input size="30" maxlength="5" type="text" name="text" id="text" placeholder="text 값을 입력하세요" required/> <br/> 
+    <!-- validate : 입력창을 검사한다 --->
 
-       radio1 : <input type="radio" name="radio" id="radio1" value="radio1"/> <br/> 
-       radio2 : <input type="radio" name="radio" id="radio2" value="radio2" checked/> <br/> 
-       radio3 : <input type="radio" name="radio" id="radio3" value="radio3"/> <br/> 
+    <!-- 
 
-       checkbox1 : <input type="checkbox" name="checkbox1" id="checkbox1" value="checkbox1" checked/>체크1 <br/> 
-       checkbox2 : <input type="checkbox" name="checkbox2" id="checkbox2" value="checkbox2"/>체크2 <br/> 
-       checkbox3 : <input type="checkbox" name="checkbox3" id="checkbox3" value="checkbox3" />체크3 <br/> 
+        1.input 하단에 div로 빨간글씨를 validate 기준 text 보여준다
+        2.[전송] 버튼을 클릭했을때 입력이 않된 필드 기준으로 text를 보여주고 focus를 이동시킨다
 
-       number : <input type="number" name="number" id="number" min="5" max="30" step="3"/> <br/> 
-       range : <input type="range" name="range" id="range"/> <br/> 
-       password : <input type="password" name="password" id="password"/> <br/> 
-       file : <input type="file" name="file" id="file" multiple/> <br/>
+    -->
 
-       email : <input type="email" name="email" id="email"/> <br/>
-       date : <input type="date" name="date" id="date"/> <br/>
-       tel : <input type="tel" name="tel" id="tel"/> <br/>
-
-       select : <select name="select" id="select" placeholder="사이트를 입력해주세요" required>
-            <option value="">사이트를 선택해주세요</option>
-            <option value="daum">daum</option>
-            <option value="naver">naver</option>
-            <option value="google">google</option>
+    <form action="https://korail-renewal-test.herokuapp.com/api/application/formtest" method="GET" autocomplete="off">
+        기본 : <input id="basic" name="basic" placeholder="기본값을 입력해주세요" required /> <br />
+        <div style="color:red">필수값입니다. 입력해주세요</div>
+        text : <input type="text" id="text" name="text" placeholder="text를 입력해주세요" maxlength="5" autocomplete="on" />
+        <br />
+        라디오 : <input type="radio" id="radio1_1" name="radio1" value="1" />
+        <input type="radio" id="radio1_2" name="radio1" value="2" />
+        <input type="radio" id="radio1_3" name="radio1" value="3" />
+        <br />
+        체크박스 : <input type="checkbox" id="check_1" name="check_1" value="c1" />
+        <input type="checkbox" id="check_2" name="check_2" value="c2" />
+        <br />
+        number : <input type="number" id="number" name="number" max="100" min="10" step="10" placeholder="number를 입력해주세요" />
+        <br />
+        range : <input type="range" id="range" name="range" placeholder="range를 입력해주세요" /> <br />
+        password : <input type="password" id="password" name="password" /> <br />
+        file : <input type="file" id="file" name="file" /> <br />
+        email : <input type="email" id="email" name="email" autofocus /> <br />
+        date : <input type="date" id="date" name="date" /> <br />
+        tel : <input type="tel" id="tel" name="tel" /> <br />
+        select : <select id="select" name="select" placeholder="select를 입력해주세요" multiple>
+            <option value="">사이트를 입력해주세요</option>
+            <option value="www.naver.com">네이버</option>
+            <option value="www.daum.net">다음</option>
+            <option value="www.google.com">구글</option>
         </select>
-        <br/>
-
-        textarea1 : <textarea rows="10" cols="30" placeholder="textarea 값을 입력하세요"></textarea><br/>
-        textarea2 : <textarea rows="10" cols="30" style="width: 200px; height: 100px;"></textarea>
-
-        text(pattern) : <input type="text" name="pattern_alphabet" id="pattern_alphabet" pattern="[A-Za-z]{3}" placeholder="알파벳만 입력해주세요">
-
-        <input type="reset" value="초기화"/>
-       <button type="submit">제출</button>
+        <br />
+        textarea : <textarea id="textarea" name="textarea" placeholder="textarea를 입력해주세요" value="먹는가?">ㅁㄴㅇㅁㄴㅇㅁ</textarea>
+        <br />
+        text(pattern) : <input type="text" name="pattern_alphabet" id="pattern_alphabet" pattern="[A-Za-z]{3}"
+            placeholder="알파벳만 입력해주세요" required>
+        <input type="hidden" value="aasdasdasd" />
+        <button type="submit">전송 GOGO</button>
     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
