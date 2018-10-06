@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .display_none {
+            display: none;
+        }
+
+        .apply-block {
+            display: block;
+        }
+
+        .apply-inline {
+            display: inline;
+        }
+
+        .apply-visibility-hidden {
+            visibility: hidden;
+        }
+
+        /*
+            
+            display 스타일의 값중 주요 사용되는 값
+             1.block : 블록 태그
+             2.inline : 인라인 태그
+             3.none : 않보이게함
+             4.inline-block : 블록과 인라인 특성을 모두 가지고 있는 display 속성 값
+
+
+            visibility 스타일의 값중 주로 사용되는 값
+              1.visible : 보이게한다
+              2.hidden : 숨긴다
+
+        */
+    </style>
+</head>
+
+<body style="border: 3px solid green">
+
+    <div style="background-color:red; border: 5px solid blue">
+        div 태그
+    </div>
+
+    <br />
+
+    <span class="apply-block" style="background-color: blue; border: 5px solid red;">span 태그</span>
+
+    <div class="apply-inline" style="background-color: green; border: 5px solid black;">div 태그2</div>
+
+    <div class="display_none" style="width:100px; height:100px; border: 1px solid black">보일까요?</div>
+
+    <div class="apply-visibility-hidden" style="width:100px; height:100px; border: 1px solid black">이건 보일까요?</div>
+
+    <h1>마지막 태그</h1>
+
+</body>
+
+</html>

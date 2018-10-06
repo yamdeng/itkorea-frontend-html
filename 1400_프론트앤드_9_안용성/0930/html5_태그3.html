@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #firstCanvas {
+            border: 1px solid black;
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        
+        canvas, svg
+
+    -->
+
+    <!-- canvas -->
+    <canvas id="firstCanvas">지원하지 않는 브라우저일 경우 text(img 태그의 alt 속성과 동일한 기능)</canvas>
+    <script>
+        var c = document.getElementById("firstCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
+
+    <!-- svg -->
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+        지원하지 않는 브라우저일 경우 text(img 태그의 alt 속성과 동일한 기능)
+    </svg>
+
+
+</body>
+
+</html>

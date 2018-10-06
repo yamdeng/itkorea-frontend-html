@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: red">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8"> -->
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"> -->
+    <!-- <meta name="viewport" content="width=320px, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=350px, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=700px, initial-scale=1.0"> -->
+    <meta http-equiv=" X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="background-color: blue">
+
+    <!--
+
+        1.charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+         -html5 이전에는 <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 같이 정의하였음
+         -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로 저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+
+        2.name="keywords" : 검색엔진이 해당 사이트 정보를 저장할때 연관정보를 쉽게 매칭시킬수 있도록 관련 키워드 정의(크롤링)
+
+        3.http-equiv="X-UA-Compatible" content="ie=edge"
+         -ie 브라우저를 지원하기 위한 선언으로 "ie=edge"로 정의시 설치된 IE 브라우저에서 가장 최신 버전의 IE 기능을 사용하라라는 의미 : 거의 사용할 필요가 없지만 공공기관 프로젝트에서 사용할 가능성이 존재는 함(ie=9)
+
+        4.name="viewport"
+         -viewport : 보이는 영역을 의미(최상위 엘리먼트 body의 width를 의미. 가로 스크롤이 적용되느냐 않되느냐)
+          1.width의 기본값은 디바이스의 width가 980보다 작으면 980 값이 적용 크면 브라우저 크기가 적용됨
+          2.width 값으로 width=device-width 지정하면 최상위 엘리먼트의 width의 크기가 디바이스의 크기만큼 적용되게된다
+         -initial-scale : 초기 줌인 레벨
+         -user-scalable : no로 정의시 사용자가 줌인을 할 수 없게끔 해준다(device os 별로 적용여부가 틀림)
+         -minimum-scale : 최소 줌인 레벨
+         -maximum-scale : 최대 줌인 레벨
+
+    -->
+    <p>
+        charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+        -html5 이전에는 http-equiv="content-type" content="text/html; charset=UTF-8" 같이 정의하였음
+        -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로
+        저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+    </p>
+
+    <p>
+        charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+        -html5 이전에는 http-equiv="content-type" content="text/html; charset=UTF-8" 같이 정의하였음
+        -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로
+        저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+    </p>
+    <p>
+        charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+        -html5 이전에는 http-equiv="content-type" content="text/html; charset=UTF-8" 같이 정의하였음
+        -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로
+        저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+    </p>
+    <p>
+        charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+        -html5 이전에는 http-equiv="content-type" content="text/html; charset=UTF-8" 같이 정의하였음
+        -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로
+        저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+    </p>
+    <p>
+        charset : DOCTYPE이 html5 이면 기본 값으로 UTF-8이 적용됨 : 현재 작성되는 웹페이지는 모두 UTF-8로 작성되어있다고 보면됨
+        -html5 이전에는 http-equiv="content-type" content="text/html; charset=UTF-8" 같이 정의하였음
+        -문자인코딩 : 컴퓨터가 인식하는 정보는 오직 0,1과 이고 좀 더 큰 단위로 byte로 정보를 읽어 들이는데 각 인코딩 별로 1byte 마다 저장되는 정보가 틀림. 어떤 인코딩은 한글을 3byte로
+        저장. 어떤 인코딩은 한글을 4byte로 저장. 컴퓨터는 byte 단위로 읽기때문에 해당 인코딩이 무엇인지 파악을 해서 byte 정보를(html 파일) 인코딩에 맞게끔 해석해서 보여줌
+    </p>
+
+</body>
+
+</html>

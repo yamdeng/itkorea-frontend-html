@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .a-border-none {
+            text-decoration: none;
+            /* text-decoration: overline; */
+            /* text-decoration: line-through; */
+            /* text-decoration: underline; */
+        }
+
+        .p_text-transform {
+            /* text-transform: capitalize; */
+            text-transform: lowercase;
+            text-transform: uppercase;
+        }
+
+        .p_text-indent {
+            text-indent: 20px
+        }
+
+        .p_letter-spacing {
+            letter-spacing: 1px
+        }
+
+        .p_word-spacing {
+            word-spacing: 100px;
+        }
+
+        .p_text-shadow {
+            text-shadow: 5px 5px blue;
+            /* text-shadow: -5px -5px blue; */
+        }
+
+        .p_line-height {
+            line-height: 1;
+        }
+
+        .span_baseline {
+            vertical-align: baseline;
+        }
+
+        .span_text-top {
+            vertical-align: text-top;
+        }
+
+        .span_text-bottom {
+            vertical-align: text-bottom;
+        }
+
+        .span_sub {
+            vertical-align: sub;
+        }
+
+        .span_super {
+            vertical-align: super;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- text-decoration, text-transform, text-indent, letter-spacing, word-spacing, text-shadow, line-height, vertical-align -->
+
+    <p>a 태그의 밑줄을 제거해보자 : <a class="a-border-none" href="https://www.naver.com">www.naver.com</a></p>
+
+    <p class="p_text-transform">대소문자를 style로 수정해보자 : A bcdefg hijk lnm</p>
+
+    <p class="p_text-indent">문단의 최초 들여쓰기를 style로 반영하자</p>
+
+    <p class="p_letter-spacing">글짜하나한의 간격을 style로 수정해보자</p>
+
+    <p class="p_word-spacing">
+        HTML CSS JAVASCRIPT
+    </p>
+
+    <p class="p_text-shadow">
+        HTML CSS JAVASCRIPT!!!
+    </p>
+
+    <p class="p_line-height">
+        HTML<br />
+        CSS<br />
+        JAVASCRIPT<br />
+    </p>
+
+    <h1>vertical-align 속성!</h1>
+    <h2>vertical-align: baseline (default):</h2>
+    <p>시작 <span class="span_baseline">중간</span> 끝</p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>시작 <img class="span_text-top" src="sqpurple.gif" style="width:9px; height: 9px" /> 끝</p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>시작 <img class="span_text-bottom" src="sqpurple.gif" style="width:9px; height: 9px" /> 끝</p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>시작 <span class="span_sub">중간</span> 끝</p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>시작 <span class="span_super">중간</span> 끝</p>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-width: 10px;
+            border-color: red;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: 5px 20px;
+            border-color: red;
+        }
+
+        p.three {
+            border-style: solid;
+            border-left-width: 10px;
+            border-top-width: 20px;
+            border-bottom-color: red;
+        }
+
+        p.four {
+            border: 10px solid blue;
+        }
+
+        p.five {
+            border-left: solid 10px red;
+        }
+
+        p.six {
+            border: 2px solid red;
+            border-radius: 10px;
+            /* border-left-radius: 20px; 이런 것은 존재하지 않음 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- border의 기본 width는 1px이다 -->
+    <h2>border-width, border-[방향]-[속성명], border, border-radius</h2>
+
+    <p class="one">one</p>
+    <p class="two">two</p>
+    <p class="three">three</p>
+    <p class="four">four</p>
+    <p class="five">five</p>
+    <p class="six">six</p>
+
+</body>
+
+</html>
