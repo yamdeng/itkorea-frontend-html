@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+
+        1.body 태그의 height 값은 브라우저의 창의 높이만큼 차지하는 것이 아니고 body 태그에 포함된 자식의 높이만큼만 height가 적용
+        
+        2.블록 태그에 width 값을 정의하지 않았을 경우 상위 태그 기준으로 차지할 수 있는 모든 공간을 차지하고 height 값을 정의하지 않았을 경우 내용만큼만 차지하게 된다
+
+        3.max-width, max-height
+
+        4.meta-viewport 부분 체크
+
+    -->
+
+    <div style="width:500px; border: 5px solid black">
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+    </div>
+
+    <br />
+    <br />
+
+    <div style="max-width:500px; border: 5px solid black; background-color: yellow; border: 5px solid blue">
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+    </div>
+
+    <br />
+
+    <div style="max-height:200px; max-width:500px; border: 5px solid black; background-color: white; border: 5px solid yellow; overflow: auto">
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+        <p style="background-color: red; border: 5px solid blue">p태그</p>
+    </div>
+
+</body>
+
+</html>

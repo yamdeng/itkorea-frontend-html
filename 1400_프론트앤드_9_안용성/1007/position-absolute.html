@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <style>
+        body {
+            z-index: 100;
+        }
+
+        #div1 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #div2 {
+            position: relative;
+            margin-top: 320px;
+        }
+
+        #div2 .block1 {
+            position: relative;
+        }
+
+        #div2 .block4 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+
+        1.absolute 포지션은 원래 html 기본 흐름과는 무관하게 흐른다
+        2.absolute 포지션은 상위 엘리먼트의 poisition: relative가 아니라면 fixed와 동일하게 동작한다
+        3.absoulte 포지션이 적용될때 상위 엘리먼트의 relative가 정의되어 태그를 찾아서 반영하는데 이떄 찾는 방법은 존재할때까지 아래서부터 위로 검색을 하고 하나도 없을 경우 페이지 기준으로 적용된다
+
+    -->
+
+    <p>HTML, CSS, JAVASCRIPT</p>
+
+    <div id="div1" class="block1 div300">
+        CSS에는 많은 종류의 선택자가 있습니다
+    </div>
+
+    <div id="div2" class="block3 div500 padding20">
+        <div class="block1 div300">
+
+            ㅁㅁㅁ
+
+            <div class="block4 div100">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

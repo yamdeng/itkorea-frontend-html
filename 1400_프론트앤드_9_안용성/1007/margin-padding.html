@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+
+<body>
+
+    <!--
+        
+        0.basic.css 설명 : 모든 예제는 해당 파일을 <link> 태그로 가져와서 사용한다. network탭 한번 더 복습(중요한 거라)
+        1.body 태그의 body-default를 적용하고 확인
+        2.html 태그의 html-default를 적용하고 확인
+        3.body, html 태그의 각각 margin 태그를 적용해보자
+        4.body 태그에 padding 적용
+        5.div, span에 margin, padding 수정
+        6.inline-block으로 변경후에 어떻게 변경되는지 확인
+
+        
+
+        최종정리
+         0.body, html 태그에도 margin, padding을 적용할 수 있다. 또한 html 태그 자체도 상위 개념이 존재한다
+         1.margin은 상위 태그와의 간격 또는 같은 형제 태그와의 간격을 설정하는 스타일이다
+         2.margin은 형제 태그간의 상하 마진이 모두 적용되어있다면 두가지 중 높은 값이 결정된다
+         3.span에도 margin은 적용된다. 단, 좌/우 margin만 적용된다
+         4.padding은 style을 정의한 태그에 속하는 하위 태그와 자기 자신간의 간격을 조율할떄 사용한다
+         5.padding은 span에도 적용된다
+         6.inline-block인 경우 text 정렬이 inline-block 태그 기준으로 정렬된다
+         7.inline-block인 경우 margin-top, bottom이 적용된다
+         8.inline-block의 흐름은 일반 text와 동일하게 흐른다
+         9.span 또한 block 처럼 text 내용을 감싸는 영역이 존재하는데 line-height와 같은 style을 속성을 이용하지 않는 이상 영역이 겹치게 된다(text간의 상하 공간은 크게 중요한 것은 아님)
+         10.margin과 padding % 단위를 사용했을 경우 상위 엘리먼트의 크기만큼 적용된다
+
+    -->
+
+    <div class="block1 div100">
+        블록태그 1
+        <span class="div100">span1</span>
+    </div>
+
+    <div class="block2 div100">
+        블록태그 2<br />
+        <span class="block3 div100">span1</span>
+        <span class="block3 div200">span2</span>
+    </div>
+
+</body>
+
+</html>

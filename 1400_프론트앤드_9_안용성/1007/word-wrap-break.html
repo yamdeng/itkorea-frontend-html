@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+
+<body>
+
+    <!--
+
+        CJK : Chinese, Japanes, Korean 의 약자
+        non-CJK : 숫자, 영어, 베트남어 등
+
+        결론
+         1.word-wrap은 단어가 넘칠 경우 다음 라인으로 break 해서 보여줄건지 결정하는 스타일인데 CJK 문자일 경우 단어가 밖으로 나가는 경우가 없고 non-CKJ인 경우에만 존재한다 
+         2.word-break는 단어를 어떤 단위로 분류할 설정해서 가로영역을 넘었을 경우에 다음 라인으로 text를 흐르게 하기 위한 스타일
+          -기본적으로 CJK는 단어 하나하나 기준으로 단어가 분류되며 non-CJK는 공백을 기준으로 단어가 분류된다
+         3.word-break
+          -noraml : CKJ는 단어 하나단위로 break, non-CKJ는 공백또는 '-' 문자 기준으로 break
+          -break-all : CKJ, non-CKJ 모두 단어 하나하나 기준으로 break
+          -kepp-all : CJK만 해당되며 break 기준을 공백또는 '-' 문자 기준로
+
+    -->
+
+    <div class="div200 block4" style="word-wrap: noraml">
+        12345678910aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        12345678910-aaaa-aaaa-aaa-aaaaaaaaa-aaa-aaaaaaa
+        <br />
+        12345678910ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    </div>
+
+    <h1>word-break: normal</h1>
+    <div class="div200 block4" style="word-break: noraml">
+        12345678910aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <br />
+        ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    </div>
+
+    <h1>word-break: break-all</h1>
+    <div class="div200 block4" style="word-break: break-all">
+        12345678910 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <br />
+        ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    </div>
+
+    <!-- keep-all은 CJK 문자에 해당함 -->
+    <h1>word-break: keep-all</h1>
+    <div class="div200 block4" style="word-break: keep-all">
+        12345678910aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        <br />
+        ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+    </div>
+
+</body>
+
+</html>

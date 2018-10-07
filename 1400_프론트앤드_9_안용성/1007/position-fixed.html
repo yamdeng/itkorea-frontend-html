@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <style>
+        body {
+            z-index: 100;
+        }
+
+        #div1 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: -10;
+        }
+
+        #div2 {}
+
+        #div3 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: -11;
+        }
+    </style>
+</head>
+
+<body class="body-default padding50">
+
+    <!-- 
+
+        1.레이아웃 개념
+
+        2.레이어의 개념
+
+        3.fixed는 원래 html 기본 흐름과는 무관하게 흐른다
+
+    -->
+
+    <p>HTML, CSS, JAVASCRIPT</p>
+
+    <div id="div1" class="block1 div300">
+
+    </div>
+
+    <div id="div2" class="block4 div500">KKK</div>
+
+    <div id="div3" class="block3 div300"></div>
+
+</body>
+
+</html>

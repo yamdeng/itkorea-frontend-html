@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="common.css" /> -->
+</head>
+
+<body>
+
+    <!-- 
+
+        1.boxmodel : margin + border + padding + content를 boxmodel 이라고 함
+
+        2.boxmodel의 총 크기
+         margin + border + padding + content
+
+        3.box-sizing의 개념
+         -기본 : width의 크기를 padding 안의 크기를 기준으로
+         -border-box : width의 크기를 border-box 까지 기준으로
+         -content-box : width의 크기를 padding 까지 적용
+
+        4.reset.css의 적용 : box-sizing
+         -common.css : reset.css, basic.css 로드
+
+        5.outline과 box-sizing과는 연관이 없다
+         
+    -->
+
+    <div id="box1" class="block1 div300 margin-bottom-10" style="box-sizing: border-box">
+        BOX1
+    </div>
+
+    <div id="box2" class="block4 div300" style="box-sizing: border-box;">
+        BOX2
+    </div>
+
+</body>
+
+</html>

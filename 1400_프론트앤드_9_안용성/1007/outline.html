@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <style>
+        #div1 {
+            border: 1px solid black;
+            outline-style: double;
+            outline-color: red;
+        }
+
+        #div2 {
+            border: 10px solid black;
+            outline-style: dashed;
+            outline-color: blue;
+            outline-width: 10px;
+        }
+
+        #div3 {
+            border: 10px solid yellow;
+            outline: outset 10px red;
+        }
+
+        #div4 {
+            border: 10px solid yellow;
+            outline: outset 10px red;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+
+        결론
+         1.outline은 블록 태그의 영역을 침범함
+
+     -->
+
+    <div id="div1" class="div200 margin-bottom-10">
+        아웃라인1
+    </div>
+
+    <div id="div2" class="div200 margin-bottom-10">
+        아웃라인2
+    </div>
+
+    <div id="div3" class="div200 margin-bottom-10">
+        아웃라인3
+    </div>
+
+    <div id="div4" class="div200 margin-bottom-10">
+        아웃라인4
+    </div>
+
+</body>
+
+</html>

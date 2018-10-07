@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+
+<body>
+
+    <!--
+
+        overflow의 속성
+         -visible : 기본값으로 내용이(하위태그) 영역을 벗어나도 보여줌
+         -hidden : 영역을 벗어나면 않보이게됨
+         -scroll : 스크롤이 나옴
+         -auto : 영역을 벗어났을 경우에만 스크롤이 나옴
+
+        결론
+         1.overflow: visible시에 형태 태그의 영역을 침범함
+         2.overflow-x, overflow-y : overflow 옵션을 가로, 세로 단위로 설정할 수 있다
+
+    -->
+
+    <div class="block1 div200 margin-bottom-10" style="overflow: auto">
+        <h1>HTML !!!!!! GOOD !!!</h1>
+        <h1>CSS !!!!!! GOOD !!!</h1>
+        <h1>JAVASCRIPT !!!!!! GOOD !!!</h1>
+    </div>
+
+    <div class="block1 div200" style="overflow-x: scroll">
+        <h1>HTML !!!!!! GOOD</h1>
+        <h1>CSS !!!!!! GOOD</h1>
+        <h1>JAVASCRIPT !!!!!! GOOD</h1>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+</head>
+
+<body>
+
+    <!--
+        
+        0.basic.css 설명 : 모든 예제는 해당 파일을 <link> 태그로 가져와서 사용한다. network탭 한번 더 복습(중요한 거라)
+
+        
+
+        최종정리
+         1.하위 태그로 블록태그인 경우 가운데 정렬을 하고 싶을 경우는 margin:auto를 사용한다
+          -이때 유의할 점은 margin은 하위 태그에 적용하는게 아니고 상위 태그 또는 형태 태그 기준으로 적용되기 때문에 하위 태그 속성을 정의한다
+          -padding에는 auto 값이 없음
+         2.인라인 태그는 margin:auto 값이 적용되지 않는다. 또한 inline-block 또한 margin:auto 값이 적용되지 않는다
+         #.결론 : 블록 태그를 가운데 정렬시 margin:auto를 사용. inline, inline-block을 가운데 정렬시 text-align: center를 사용
+
+    -->
+
+    <div class="block1 div300 margin-bottom-10">
+        <div class="block3 div100">태그1</div>
+    </div>
+
+    <div class="block2 div300 margin-bottom-10 align-center">
+        <span class="block1 div100">text</span>
+    </div>
+
+</body>
+
+</html>
